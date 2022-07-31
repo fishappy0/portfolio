@@ -34,6 +34,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .app_data(web::Data::new(tera.clone()))
             .wrap(tracing_actix_web::TracingLogger::default())
+            .service(index)
             .service(home)
             .service(yes)
         // .service(admin)

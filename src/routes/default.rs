@@ -6,6 +6,14 @@ use std::sync::Arc;
 pub struct Query {
     id: String,
 }
+#[get("/")]
+pub async fn index(
+    template: web::Data<Arc<tera::Tera>>,
+) -> crate::types::TeraPage {
+    let context = tera::Context::new();
+    let tera_page = template.render("index.html", &context);
+    types::TeraPage(tera_page, Arc::clone(&template))
+}
 #[get("/{page}")]
 pub async fn home(
     template: web::Data<Arc<tera::Tera>>,
