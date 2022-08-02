@@ -15,7 +15,7 @@ pub async fn index(
     types::TeraPage(tera_page, Arc::clone(&template))
 }
 #[get("/{page}")]
-pub async fn home(
+pub async fn selected_page(
     template: web::Data<Arc<tera::Tera>>,
     page: web::Path<String>,
 ) -> crate::types::TeraPage {

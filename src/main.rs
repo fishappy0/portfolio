@@ -6,7 +6,8 @@ use tracing_subscriber;
 mod routes;
 mod types;
 mod utils;
-use crate::routes::default::*;
+use crate::routes::default;
+use crate::routes::admin;
 
 static IP: &str = "localhost";
 static PORT: u16 = 8080;
@@ -35,9 +36,11 @@ async fn main() -> std::io::Result<()> {
             .app_data(web::Data::new(tera.clone()))
             .wrap(tracing_actix_web::TracingLogger::default())
             .service(actix_files::Files::new("/assets", "./assets"))
-            .service(index)
-            .service(home)
-            .service(yes)
+            .service(admin::admin_index)
+            .service(admin::admin_page)
+            .service(default::index)
+            .service(default::selected_page)
+            .service(default::yes)
         // .service(admin)
     })
     .bind((IP, PORT))?
