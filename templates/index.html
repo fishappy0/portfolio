@@ -1,26 +1,77 @@
 {% extends 'base.html' %} {%block body%}
-<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNavAltMarkup"
-    aria-controls="navbarNavAltMarkup"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
+  <section
+    class="ln-section d-xl-flex bg-light"
+    data-anchor="what-we-do"
+    data-tooltip="What we do"
+    data-ui="dark"
+    data-navbar="navbar-light"
   >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#"
-        >Home <span class="sr-only">(current)</span></a
-      >
-      <a class="nav-item nav-link" href="#">Features</a>
-      <a class="nav-item nav-link" href="#">Pricing</a>
-      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    <div class="container align-self-xl-center">
+      <div class="row">
+        <div class="col-12 col-xl-5 mb-8 mb-xl-0">
+          <h2 class="animated mb-4" data-animation="fadeInUp">Fishappy0</h2>
+          <div class="row pb-3">
+            <div class="pl-3 pr-2">Page source</div>
+            <div>More detail about me</div>
+          </div>
+          <p
+            class="animated"
+            data-animation="fadeInUp"
+            data-animation-delay="150"
+          >
+            <span
+              >Hi, I'm a Viet bloke that enjoys tinkering with anything, esp with cutting edge technologies.</span
+            >
+          </p>
+        </div>
+        <div class="col-12 col-xl-6 offset-xl-1">
+          <div class="row">
+            <div
+              class="col-md-6 col-sm-6 mb-8 animated"
+              data-animation="fadeInUp"
+            >
+              <h3 class="h4 mb-0">I use these... stuff?</h3>
+              <div class="icon-7x text-primary mb-4">
+                <i class="ti-timer"></i>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-sm-6 mb-8 animated"
+              data-animation="fadeInUp"
+              data-animation-delay="150"
+            >
+              <h3 class="h4 mb-0">More stuff...? that I use</h3>
+              <div class="icon-7x text-primary mb-4">
+                <i class="ti-brush-alt"></i>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-sm-6 mb-8 animated"
+              data-animation="fadeInUp"
+              data-animation-delay="300"
+            >
+              <h3 class="h4 mb-0">Contact me here!</h3>
+              <div class="icon-7x text-primary mb-4">
+                <i class="ti-book"></i>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-sm-6 mb-8 animated"
+              data-animation="fadeInUp"
+              data-animation-delay="450"
+            >
+              <h3 class="h4 mb-0">Look at my projects!</h3>
+              <div class="icon-7x text-primary mb-4">
+                <i class="ti-layers"></i>
+              </div>
+            </div>
+
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
+  </section>
+</div>
 {%endblock%}

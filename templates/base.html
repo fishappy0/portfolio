@@ -37,6 +37,41 @@
   </head>
 
   <body>
-    {%block body%} {% endblock %}
+    <div class="flex">
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/assets/images/icon/logo.png"
+            alt="Fishappy0"
+            width="50"
+            height="50"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link" href="#">About me</a>
+            <a class="nav-item nav-link" href="#">Projects</a>
+            <a class="nav-item nav-link" href="#">Live demo projects</a>
+            <!--
+            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+          --></div>
+        </div>
+      </nav>
+      {%block body%} {% endblock %}
+    </div>
   </body>
 </html>
