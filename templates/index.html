@@ -1,77 +1,88 @@
 {% extends 'base.html' %} {%block body%}
-  <section
-    class="ln-section d-xl-flex bg-light"
-    data-anchor="what-we-do"
-    data-tooltip="What we do"
-    data-ui="dark"
-    data-navbar="navbar-light"
-  >
-    <div class="container align-self-xl-center">
-      <div class="row">
-        <div class="col-12 col-xl-5 mb-8 mb-xl-0">
-          <h2 class="animated mb-4" data-animation="fadeInUp">Fishappy0</h2>
-          <div class="row pb-3">
-            <div class="pl-3 pr-2">Page source</div>
-            <div>More detail about me</div>
-          </div>
-          <p
-            class="animated"
-            data-animation="fadeInUp"
-            data-animation-delay="150"
-          >
-            <span
-              >Hi, I'm a Viet bloke that enjoys tinkering with anything, esp with cutting edge technologies.</span
-            >
-          </p>
-        </div>
-        <div class="col-12 col-xl-6 offset-xl-1">
-          <div class="row">
-            <div
-              class="col-md-6 col-sm-6 mb-8 animated"
-              data-animation="fadeInUp"
-            >
-              <h3 class="h4 mb-0">I use these... stuff?</h3>
-              <div class="icon-7x text-primary mb-4">
-                <i class="ti-timer"></i>
-              </div>
-            </div>
 
-            <div
-              class="col-md-6 col-sm-6 mb-8 animated"
-              data-animation="fadeInUp"
-              data-animation-delay="150"
-            >
-              <h3 class="h4 mb-0">More stuff...? that I use</h3>
-              <div class="icon-7x text-primary mb-4">
-                <i class="ti-brush-alt"></i>
-              </div>
-            </div>
+    <!-- Back To Top Button -->
+    <a href="#top" class="backtotop">
+      <span>Back To Top</span>
+      <i class="fas fa-angle-up"></i>
+    </a>
 
-            <div
-              class="col-md-6 col-sm-6 mb-8 animated"
-              data-animation="fadeInUp"
-              data-animation-delay="300"
-            >
-              <h3 class="h4 mb-0">Contact me here!</h3>
-              <div class="icon-7x text-primary mb-4">
-                <i class="ti-book"></i>
-              </div>
-            </div>
-
-            <div
-              class="col-md-6 col-sm-6 mb-8 animated"
-              data-animation="fadeInUp"
-              data-animation-delay="450"
-            >
-              <h3 class="h4 mb-0">Look at my projects!</h3>
-              <div class="icon-7x text-primary mb-4">
-                <i class="ti-layers"></i>
-              </div>
-            </div>
-
-        </div>
+    <!-- Scroll progress -->
+    <div class="scroll-progress">
+      <div class="sp-left">
+        <div class="sp-inner"></div>
+        <div class="sp-inner progress"></div>
+      </div>
+      <div class="sp-right">
+        <div class="sp-inner"></div>
+        <div class="sp-inner progress"></div>
       </div>
     </div>
-  </section>
-</div>
+
+    <!-- Fullpage content -->
+    <div class="ln-fullpage" data-navigation="true">
+
+      <!-- Section - Home -->
+      <section class="ln-section d-flex min-vh-100" data-anchor="home" data-tooltip="Home" data-ui="light" data-navbar="navbar-dark">
+        <div class="overlay overlay-advanced">
+          <div class="overlay-inner bg-image-holder bg-cover bg-bottom-center">
+            <img src="assets/images/logo.png" alt="background">
+          </div>
+          <div class="overlay-inner bg-dark opacity-70"></div>
+        </div>
+        <div class="container align-self-center text-white">
+        <div class="container align-self-xl-center">
+
+          <div class="row">
+            <div class="col-12 col-xl-5 mb-8 mb-xl-0">
+              <img src="/assets/images/icon/logo.png" data-animation="fadeInUp"/>
+              <h2 class="animated mb-4" data-animation="fadeInUp">Fishappy0</h2>
+              <div class="pb-3 row" data-animation="fadeInUp">
+                <div class="pl-3">Page Source</div>
+                <div class="pl-3">More detail about me</div>
+              </div>
+              <p class="animated" data-animation="fadeInUp" data-animation-delay="150"><span>Hi, welcome to my page! I'm a Viet bloke that enjoys tinkering with anything, especially cutting-edge technologies.</span></p>
+            </div>
+            <div class="col-12 col-xl-6 offset-xl-1">
+              <div class="row">
+
+                <div class="col-md-6 col-sm-6 mb-8 animated" data-animation="fadeInUp">
+                  <h3 class="h4 mb-0">Stuff I'm using</h3>
+                  <div class="pt-5 icon-7x text-primary mb-4">
+                    <i class="ti-timer"></i>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="150">
+                  <h3 class="h4 mb-0">More stuff that I use</h3>
+                  <div class="pt-5 icon-7x text-primary mb-4">
+                    <i class="ti-brush-alt"></i>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="300">
+                </div>
+                <div class="col-md-6 col-sm-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="300">
+                </div>
+                <div class="col-md-6 col-sm-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="300">
+                  <h3 class="h4 mb-0">Contact me!</h3>
+                  <div class="pt-5 icon-7x text-primary mb-4">
+                    <i class="ti-book"></i>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6 mb-8 animated" data-animation="fadeInUp" data-animation-delay="450">
+                  <h3 class="h4 mb-0">My projects!</h3>
+                  <div class="pt-5 icon-7x text-primary mb-4">
+                    <i class="ti-layers"></i>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
 {%endblock%}
