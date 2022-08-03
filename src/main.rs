@@ -38,9 +38,9 @@ async fn main() -> std::io::Result<()> {
             .service(actix_files::Files::new("/assets", "./assets"))
             .service(admin::admin_index)
             .service(admin::admin_page)
+            .service(default::yes)
             .service(default::index)
             .service(default::selected_page)
-            .service(default::yes)
         // .service(admin)
     })
     .bind((IP, PORT))?
